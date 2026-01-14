@@ -12,8 +12,8 @@ from sqlalchemy.orm import Session
 import os
 from pathlib import Path
 
-from database import get_db, init_db
-from models import Capability, Consultant, Certification, Industry, SkillLevel
+from .database import get_db, init_db
+from .models import Capability, Consultant, Certification, Industry, SkillLevel
 
 app = FastAPI(title="Slalom Capabilities Management API",
               description="API for managing consulting capabilities and consultant expertise")
