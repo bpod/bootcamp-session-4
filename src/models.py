@@ -4,7 +4,7 @@ Database models for the Slalom Capabilities Management System.
 
 from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text
 from sqlalchemy.orm import relationship
-from database import Base
+from .database import Base
 
 # Association table for many-to-many relationship between capabilities and consultants
 capability_consultants = Table(
